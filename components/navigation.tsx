@@ -28,7 +28,6 @@ const routes = [
     label: "Categories",
   },
 ];
-
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,7 +70,6 @@ export const Navigation = () => {
       </Sheet>
     );
   }
-
   return (
     <nav className="hidden items-center gap-x-2 overflow-x-auto lg:flex">
       {routes.map((route) => (
@@ -85,3 +83,4 @@ export const Navigation = () => {
     </nav>
   );
 };
+

@@ -1,3 +1,5 @@
+'use client'
+
 import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
