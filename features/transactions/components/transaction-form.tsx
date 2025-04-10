@@ -19,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { insertTransactionSchema } from "@/db/schema";
 import { convertAmountToMilliunits } from "@/lib/utils";
+import { Value } from "@radix-ui/react-select";
 
 const formSchema = z.object({
   date: z.coerce.date(),
@@ -186,6 +187,7 @@ export const TransactionForm = ({
                   {...field}
                   disabled={disabled}
                   placeholder="0.00"
+      
                 />
               </FormControl>
 
